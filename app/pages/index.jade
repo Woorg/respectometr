@@ -1,0 +1,10 @@
+extends /blocks/layout-default/layout-default
+
+include /blocks/respectometr/respectometr
+
+block head
+	- var pageTitle = 'Респектометр';
+
+block content
+	.in
+		+respectometr()

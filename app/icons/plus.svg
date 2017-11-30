@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.29 28.29">
+  <defs>
+    <style>
+      .cls-1 {
+        fill-opacity: 0.5;
+      }
+    </style>
+  </defs>
+  <title>Asset 2</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <g id="Canvas">
+        <g id="fa-plus">
+          <path id="path0_fill" data-name="path0 fill" class="cls-1" d="M28.29,12.21a1.93,1.93,0,0,0-1.93-1.93H18V1.93A1.93,1.93,0,0,0,16.07,0H12.21a1.93,1.93,0,0,0-1.93,1.93v8.36H1.93A1.93,1.93,0,0,0,0,12.21v3.86A1.93,1.93,0,0,0,1.93,18h8.36v8.36a1.93,1.93,0,0,0,1.93,1.93h3.86A1.93,1.93,0,0,0,18,26.36V18h8.36a1.93,1.93,0,0,0,1.93-1.93Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

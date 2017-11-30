@@ -1,0 +1,157 @@
+.respectometr
+	padding-top 20px
+	font-family $pR
+	font-size 12px
+	color #FFF
+	overflow hidden
+	&__list
+		margin-right -10px
+		font-size 0
+	&__item
+		margin-right 8px
+		margin-bottom 28px
+		width 110px
+		display inline-block
+		vertical-align top
+	&__top
+		position relative
+		height 60px
+		background #1F252C
+	&__gradient
+		position absolute
+		top 0
+		left 0
+		width 28px
+		height 60px
+		background linear-gradient(180deg, #4D3487 0%, rgba(76, 52, 134, 0.0001) 100%)
+		content ""
+	&__photo
+		position absolute
+		z-index 1
+		top -20px
+		left 0
+		bottom 0
+		width 110px
+		height 80px
+		background-size cover
+		background-position 26px 0
+		background-repeat no-repeat
+		hide-text()
+	&__team
+		position absolute
+		z-index 1
+		top 10px
+		left 13px
+		width 30px
+		height 30px
+		background-size cover
+	&__name
+		padding-top 9px
+		padding-bottom 6px
+		padding-left 6px
+		padding-right 6px
+		min-height 30px
+		display block
+		background #303840
+		text-align center
+		font-size 12px
+		color #FFF
+		text-decoration none
+		text-transform uppercase
+		&:hover
+			text-decoration underline
+
+	&__scores
+		padding-left 19px
+		padding-right 11px
+		width 110px
+		// height 192px
+		background linear-gradient(90deg, #1F252C 0%, #000000 47.56%, #1F252C 100%)
+	&__scores-item
+		padding-bottom 12px
+		padding-top 12px
+		font-size 12px
+		text-align center
+		line-height 1
+		border-bottom 1px solid #4C3486
+		&:last-child
+			border-bottom 1px solid transparent
+	&__scores-num
+		display block
+		vertical-align top
+		font-family $pB
+		font-size 24px
+
+	&__bottom
+		position relative
+		height 55px
+		background linear-gradient(180deg, #4D3487 0%, rgba(76, 51, 133, 0.0001) 100%), #1F252C
+		&:hover
+			.respectometr__total
+				display none
+				opacity 0
+			.respectometr__rating
+				display block
+				opacity 1
+
+	&__total
+		position relative
+		padding-top 8px
+		text-align center
+		font-family $pB
+		font-size 12px
+		line-height 1
+		opacity 1
+		tr(opacity .1s linear)
+		span
+			display block
+			font-size 36px
+			line-height .8
+	&__rating
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		font-size 0
+		display none
+		opacity 0
+		tr(opacity .1s linear)
+	&__rating-button
+		position relative
+		width 55px
+		height 55px
+		display inline-block
+		vertical-align top
+		text-decoration none
+		// background #1F252C
+		tr(background .1s linear)
+	&__rating-button_down
+		background linear-gradient(180deg, #EA053B 0%, rgba(208, 2, 27, 0.0209466) 97.77%), #1F252C
+		&:hover
+			background #D0021B
+			.respectometr__rating-icon
+				fill-opacity .2
+
+	&__rating-button_up
+		background linear-gradient(180deg, #417505 0%, rgba(65, 117, 5, 0.0001) 98.43%), #1F252C
+		&:hover
+			background #417505
+			.respectometr__rating-icon
+				fill-opacity .2
+
+	&__rating-icon
+		position absolute
+		top 50%
+		left 50%
+		width 30px
+		height 36px
+		fill-opacity .5
+		transform translate(-50%, -50%)
+
+.respectometr__item_no-team
+	.respectometr__top
+		&:after
+			display none
+	.respectometr__photo
+		background-position 0 0
